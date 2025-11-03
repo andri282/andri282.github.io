@@ -675,6 +675,52 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+    <div class="modal fade" id="voucherModal" tabindex="-1" aria-labelledby="voucherModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="voucherModalLabel">
+          ⭐ KLAIM KODE DISKON ANDA! ⭐
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body text-center p-4">
+        <p class="lead">Selamat datang! Gunakan kode di bawah ini untuk **potongan harga 25%** khusus hari ini.</p>
+        
+        <div class="p-3 my-3 border border-warning bg-light rounded">
+          <p class="mb-0 fs-3 fw-bold text-danger">
+            UMRAHHEMAT25
+          </p>
+        </div>
+        
+        <p class="small text-danger fw-bold">Penawaran terbatas, hanya berlaku 24 jam!</p>
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <a href="#link-pembelian-anda" class="btn btn-warning text-dark fw-bold">
+          <i class="bi bi-cart-fill"></i> SAYA MAU DISKON INI!
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  // Pemicu Modal Otomatis
+  document.addEventListener('DOMContentLoaded', function() {
+    // Pastikan Modal sudah terinisiasi oleh Bootstrap
+    var myModal = new bootstrap.Modal(document.getElementById('voucherModal'));
+    
+    // Tampilkan modal setelah penundaan 500ms
+    setTimeout(function() {
+      myModal.show();
+    }, 500); 
+  });
+</script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
