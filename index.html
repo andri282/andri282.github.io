@@ -77,6 +77,9 @@
             <li><a href="#steps">Steps</a></li>
             <li><a href="#testimonials">Testimoni</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li>
+              <a href="#" class="ml-onclick-form" onclick="ml('show', 'DHXCd7', true)"> Claim Miles </a>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -724,7 +727,7 @@
       </div>
     </div>
 
-    <script>
+    <!-- <script>
       // Pemicu Modal Otomatis
       document.addEventListener("DOMContentLoaded", function () {
         // Pastikan Modal sudah terinisiasi oleh Bootstrap
@@ -735,7 +738,7 @@
           myModal.show();
         }, 500);
       });
-    </script>
+    </script> -->
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -746,6 +749,24 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        (w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n);
+      })(window, document, "script", "https://assets.mailerlite.com/js/universal.js", "ml");
+      ml("account", "1927602");
+    </script>
+    <!-- End MailerLite Universal -->
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
